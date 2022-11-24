@@ -4,6 +4,8 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
+    justify-content: left;
+    align-items: left;
   }
   
   .headingXl {
@@ -49,4 +51,19 @@
   
   .lightText {
     color: #666;
+  }
+
+
+  .socialItem {
+    margin: 0 0 0rem;
+    color: #000
+  }
+
+  .customTitle {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .mainWriting {
+    text-decoration: none;
   }

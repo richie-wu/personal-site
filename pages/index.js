@@ -21,24 +21,45 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>my self intro</p>
-        <p>
-          tktktk introduction
+        <div>
+          
+        </div>
+        <div className={utilStyles.customTitle}>
+          richie wu
+          </div>
+        <p>hi my name is richie. welcome to my space. 
+          i love to write about all sorts of things because my mind is racing all the time. 
         </p>
+        <p>
+        i build fintech products for founders at brex. 
+        i run at post content on litpm to help people break into product management.
+        </p>
+        <p>
+        currently based in nyc.
+        </p>
+
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <Link href='/posts'>
+          <div className={utilStyles.mainWriting}>
+          my writing
+          </div>
+        </Link>
+      </section>
+
+      <section>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-            <Link href={`/posts/${id}`}>{title}</Link>
-            <br />
-            <small className={utilStyles.lightText}>
-              <Date dateString={date} />
-            </small>
-          </li>
-          ))}
+            <li className = {utilStyles.socialItem}>
+              <Link href=''>twitter</Link>
+            </li>
+            <li className = {utilStyles.socialItem}>
+            <Link href=''>linkedin</Link>
+            </li>
+            <li className = {utilStyles.socialItem}> 
+            <Link href=''>email</Link>
+            </li>           
         </ul>
+        
       </section>
     </Layout>
   );
