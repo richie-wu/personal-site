@@ -18,10 +18,10 @@ export default function MainPosts({allPostsData}) {
     return (
         <Layout>
             <Head>
-                <title>test</title>
+                <title>rw</title>
             </Head>
             <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-                <h2 className={utilStyles.headingLg}>writing</h2>
+                <h2 className={utilStyles.headingLg}>my writing</h2>
                 <ul className={utilStyles.list}>
                     {allPostsData.map(({ id, date, title }) => (
                         <li className={utilStyles.listItem} key={id}>

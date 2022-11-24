@@ -44,8 +44,8 @@ export default function Layout({ children, home }) {
                 priority
                 src="/images/logo.png"
         
-                height={108}
-                width={108}
+                height={20}
+                width={100}
                 alt=""
               />
             </Link>
