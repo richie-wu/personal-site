@@ -32,8 +32,12 @@ export default function Home({ allPostsData }) {
             i love to write about all sorts of things because my mind is racing all the time.
           </p>
           <p>
-            i build fintech products for founders at brex.
-            i run at post content on litpm to help people break into product management.
+            i build fintech products for founders at <Link href='https://www.brex.com/' target='_blank' className={utilStyles.bodyLink}>
+               brex
+            </Link>.
+            i sometimes post content on <Link href='https://linktr.ee/litpm' target='_blank' className={utilStyles.bodyLink}>
+              litpm
+              </Link> to help people break into product management.
           </p>
           <p>
             currently based in nyc.
@@ -52,13 +56,28 @@ export default function Home({ allPostsData }) {
       <div className={utilStyles.footerSection}>
         <ul className={utilStyles.list}>
           <li className={utilStyles.socialItem}>
-            <Link href=''>twitter</Link>
+            <Link 
+            href='https://twitter.com/richieyourfam' 
+            target='_blank'
+            >
+              twitter
+              </Link>
           </li>
           <li className={utilStyles.socialItem}>
-            <Link href=''>linkedin</Link>
+            <Link 
+            href='https://www.linkedin.com/in/chardwu/'
+            target='_blank'
+            >
+              linkedin
+              </Link>
           </li>
           <li className={utilStyles.socialItem}>
-            <Link href=''>email</Link>
+            <Link 
+            href='mailto:richie.mail.wu@gmail.com?subject=Greetings Richie!'
+            target='_blank'
+            >
+              email
+              </Link>
           </li>
         </ul>
 
